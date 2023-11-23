@@ -1,0 +1,255 @@
+.banner {
+   
+  padding: 18%;
+  position: relative;
+  background-attachment: fixed;
+  z-index:1 ;
+}
+a img{
+  height: 50px;
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: -1;
+}
+.menucolor {
+  background-color: #2E7D32;
+}
+.banner2 {
+  background-image: url("../img/pexels-nejc-košir-338936.jpg");
+  padding: 25%;
+  position: relative;
+  background-attachment: fixed;
+  z-index: 1;
+  background-repeat: no-repeat;
+}
+
+.banner2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.banner3 {
+  background-image: url("../img/pexels-baskin-creative-studios-1766838.jpg");
+  padding: 25%;
+  position: relative;
+  background-attachment: fixed;
+  z-index: 1;
+  background-repeat: no-repeat;
+}
+
+.banner3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: -1;
+}
+.banner4 {
+  background-image: url("../img/pexels-eberhard-grossgasteiger-454880.jpg");
+  padding: 25%;
+  position: relative;
+  background-attachment: fixed;
+  z-index: 1;
+  background-repeat: no-repeat;
+}
+
+.banner4::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: -1;
+}
+/* Estilo para el contenedor de video */
+.video-background {
+  position:static;
+  overflow: hidden;
+  width: 100%;
+  height: 100%; /* 100% de la altura de la ventana visible */
+}
+
+/* Estilo para el video */
+.video-background video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta el video para cubrir todo el contenedor */
+}
+
+/* Estilo para el contenido en la parte superior del video */
+.content {
+  position: relative;
+  z-index: 1; /* Coloca el contenido sobre el video */
+  padding: 5%;
+  color: #fff;
+  
+}
+.container{
+height: 60%;
+width: 60%;
+text-align: center;
+padding-top: 2%;
+padding-bottom: 2%;
+
+}
+.container img{
+
+padding-top: 5px;
+height: 310px;
+width:500px;
+}
+.container1{
+
+height: 600px;
+display:flex ;
+justify-content: center;
+text-align: center;
+text-decoration:overline;
+}
+
+
+footer {
+background-color: #2E7D32; 
+color: #fff;
+padding: 30px 0;
+}
+
+
+footer a {
+color: #fff; 
+text-decoration: none;
+
+}
+
+footer a:hover {
+text-decoration: underline;
+}
+
+
+footer .fab {
+font-size: 24px; 
+margin-right: 10px;
+}
+
+
+footer .container {
+max-width: 1200px; /* Ancho máximo del contenido */
+}
+
+ul {
+list-style-type: none; /* Elimina las viñetas de la lista desordenada */
+}
+.container i{
+margin-top: 0%;
+}
+
+/* .container-fluid{
+background-color: chartreuse;
+} */
+/* .menucolor{
+background-color: rgba(83, 168, 68, 0.512);
+} */
+
+.columnaDashboard{
+height: 100vh;
+}
+
+.blancoNegro:hover {
+transform: scale(1.05);  
+box-shadow: 0px 0px 5px 1px rgb(250, 249, 249);
+}
+
+.bg-Verde{
+background-color: aqua;
+/* background-color: #80F01A; */
+}
+/*Dasboard*/
+.card {
+background-color: #93a099;
+position: relative;
+transition: transform 0.3s;
+transition: transform 0.5s, box-shadow 0.5s;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+transform: translateY(-15px);
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+.animate__animated .animate__backInLeft{
+animation-duration: 20s;
+
+}
+.columnadas {
+height: 100vh;
+width: 50vh;
+}
+/*
+.row:hover {
+/* background-color: rgb(243, 247, 247); 
+color: #01770b;
+}
+
+*/
+/* estilo para los botones de consulta */
+.dropdown {
+  position: relative;
+}
+
+.dropdown .btn-secondary {
+  background-color: #343a40;
+  color: #ffffff;
+  width: 200px; /* Ajusta el ancho según tus preferencias */
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Agrega una transición suave de 0.3 segundos */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.dropdown:hover .btn-secondary {
+  background-color: #047633;
+  color: #ffffff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Agrega un efecto de levantamiento */
+}
+
+.dropdown-menu{
+  min-width: 280px; /* Ajusta el ancho del menú desplegable según tus preferencias */
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Agrega una transición suave */
+}
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+}
+.dropdown-item {
+  transition: background-color 0.5s ease, color 0.3s ease; /* Agrega una transición suave */
+}
+.dropdown-item:hover{
+  background-color: #10773b;
+}

@@ -1,0 +1,7 @@
+python -m venv modules ---> se crea para tener un entorno virtual, y poder instalar
+	los paquetes o dependencias de python dentro del proyecto --> pip install pandas
+Primero se debe activar el entorno virtual para instalar (pip install pandas)
+
+pip freeze -->para ver listado de paquetes instalados
+pip install -r paquetes.txt --->permite instalar todos los paquetes que ya tenemos
+pip freeze > paquetes.txt  --->Forma de actualizar el archivo de paquetes.
