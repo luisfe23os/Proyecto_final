@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Analisis</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -34,9 +34,7 @@
             </a>
             
           
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tree-fill" viewBox="0 0 16 16">
-                <path d="M8.416.223a.5.5 0 0 0-.832 0l-3 4.5A.5.5 0 0 0 5 5.5h.098L3.076 8.735A.5.5 0 0 0 3.5 9.5h.191l-1.638 3.276a.5.5 0 0 0 .447.724H7V16h2v-2.5h4.5a.5.5 0 0 0 .447-.724L12.31 9.5h.191a.5.5 0 0 0 .424-.765L10.902 5.5H11a.5.5 0 0 0 .416-.777l-3-4.5z"/>
-              </svg>
+           
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -66,13 +64,16 @@
                     </li>
                 </ul>
             </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-tree-fill" viewBox="0 0 16 16">
+              <path d="M8.416.223a.5.5 0 0 0-.832 0l-3 4.5A.5.5 0 0 0 5 5.5h.098L3.076 8.735A.5.5 0 0 0 3.5 9.5h.191l-1.638 3.276a.5.5 0 0 0 .447.724H7V16h2v-2.5h4.5a.5.5 0 0 0 .447-.724L12.31 9.5h.191a.5.5 0 0 0 .424-.765L10.902 5.5H11a.5.5 0 0 0 .416-.777l-3-4.5z"/>
+            </svg>
         </div>
     </nav>
     </header>
 
-    <main class="container-fluid mt-5">
+    <main class="container-fluid mt-5  "> 
         <div class="row">
-            <div class=" col-12 col-md-4 bg-dark text-white columnadas">
+            <div class=" col-12 col-md-1 bg-dark text-white columnadas">
                 <!-- <div class="row">
                     <div class="col-12 p-5 text-center animate__animated animate__backInLeft ">
                       <button type="button" class="btn btn-success">Success</button></a>
@@ -82,7 +83,7 @@
 
 
                 <div class="row">
-                    <div class="col-12 p-5 text-center animate__animated animate__backInLeft ">
+                    <div class="col-12 mt-5 p-5 text-center animate__animated animate__backInLeft ">
                       <button type="button" class="btn btn-success">Analizar Datos</button>
                         <i class="bi bi-graph-up-arrow"></i>
                     </div>
@@ -94,7 +95,15 @@
                     </div>
                 </div>
                 <!-- Default dropend button -->
-            
+                <label for="pdfSelect">Selecciona un PDF:</label>
+                <select id="pdfSelect">
+                  <option value="CostoTotalRefrigerios.pdf">CostoTotalRefrigerios</option>
+                  <option value="Refrigerios.pdf">estudia</option>
+                  <option value="">Archivo 3</option>
+                  <!-- Agrega más opciones según sea necesario -->
+                </select>
+                <button id="downloadButton">Descargar Archivo</button>
+                <script type="module" src="helpers/descarga.js"></script>
                 
             </div>
           

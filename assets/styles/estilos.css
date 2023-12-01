@@ -1,6 +1,11 @@
+nav{
+  padding: 5;
+  height: 110px;
+  
+}
 .banner {
    
-  padding: 18%;
+  padding: 30%;
   position: relative;
   background-attachment: fixed;
   z-index:1 ;
@@ -90,6 +95,7 @@ a img{
   overflow: hidden;
   width: 100%;
   height: 100%; /* 100% de la altura de la ventana visible */
+  
 }
 
 /* Estilo para el video */
@@ -98,15 +104,16 @@ a img{
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ajusta el video para cubrir todo el contenedor */
+  height: 110%;
+  object-fit: cover; /*Ajusta el video para cubrir todo el contenedor*/
+  bottom:90%;
 }
 
 /* Estilo para el contenido en la parte superior del video */
 .content {
   position: relative;
   z-index: 1; /* Coloca el contenido sobre el video */
-  padding: 5%;
+  padding: 3%;
   color: #fff;
   
 }
@@ -114,7 +121,7 @@ a img{
 height: 60%;
 width: 60%;
 text-align: center;
-padding-top: 2%;
+padding-top: 8%;
 padding-bottom: 2%;
 
 }
@@ -126,7 +133,7 @@ width:500px;
 }
 .container1{
 
-height: 600px;
+height: 700px;
 display:flex ;
 justify-content: center;
 text-align: center;
@@ -209,6 +216,7 @@ animation-duration: 20s;
 .columnadas {
 height: 100vh;
 width: 50vh;
+right: 50%;
 }
 /*
 .row:hover {
